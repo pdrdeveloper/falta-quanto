@@ -13,27 +13,39 @@
             <div class="loader-wrapper">
                 <span class="loader"><span class="loader-inner"></span></span>
             </div>
+            <div id="container">
             <div class="box" id="faltaquanto">
                     <h2>Falta Quanto?</h2>
-                    <div class="inputBox">
-                        <input type="text" name="" required="" id="metaUsuario">
-                        <label>Qual é a sua meta?</label>
+                    <div class="selectBox">
+                        <select name="categoria" id="categoriaUsuario">
+                            <option value="escolha">Escolha uma categoria.</option>
+                            <option value="estudos">Estudos</option>
+                            <option value="viagem">Viagem</option>
+                            <option value="compras">Compras</option>
+                        </select>
                     </div>
-                        <div class="inputBox">
+                    <div class="inputBox" id="meta">
+                        <input type="text" name="" required="" id="metaUsuario">
+                        <label id="txtMeta">Qual é a sua meta?</label>
+                    </div>
+                        <div class="inputBox" id="atual">
                             <input type="number" name="" required="" id="dinheiroAtual">
-                            <label>Quanto você tem?</label>
+                            <label id="txtAtual">Quanto você tem?</label>
                         </div>
-                        <div class="inputBox">
+                        <div class="inputBox" id="dinmeta">
                             <input type="number" name="" required="" id="dinheiroMeta">
-                            <label>Quanto você precisa atingir?</label>
+                            <label id="txtDinmeta">Quanto você precisa atingir?</label>
                         </div>
-                        <div class="inputBox">
+                        <div class="inputBox" id="tempo">
                             <input type="number" name="" required="" id="tempoMeta">
-                            <label>Em quanto meses você precisa atingir?</label>
+                            <label id="txtTempo">Em quanto meses você precisa atingir?</label>
                         </div>
-                        <button onclick="validaInfo()">Clique aqui.</button><br>
-                        <p id="resultado">Por favor, preencha todos os dados acima!</p>
+                        <div id="btn">
+                            <button onclick="validaInfo()">Clique aqui.</button><br>
+                        </div>
+                        <p id="resultado">Por favor, escolha uma categoria.</p>
                 </div>            
+            </div>
     </section>
     <script src="script.js" type="text/javascript"></script>
 </body>
