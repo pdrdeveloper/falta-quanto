@@ -91,3 +91,16 @@ body {
     font-size: 11px;
   }
 }
+
+@media only screen and (max-width:400px) {
+  .box {
+    width: 90%;
+  }
+  .box .inputBox label {
+    font-size: 12.5px;
+  }
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label {
+    font-size: 11px;
+  }
+}
