@@ -10,7 +10,7 @@
     "background_color" : "#ffffff",
     "icons" : [
         {
-        "src": "/imgs/logo_faltaquanto.png",
+        "src": "falta-quanto/imgs/logo_faltaquanto.png",
         "sizes": "512x512",
         "type": "image/png"
         }
