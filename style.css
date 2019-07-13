@@ -83,4 +83,11 @@ body {
   .box {
     width: 90%;
   }
+  .box .inputBox label {
+    font-size: 13px;
+  }
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label {
+    font-size: 11px;
+  }
 }
