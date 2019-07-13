@@ -20,6 +20,19 @@ function validaInfo() {
         }
     }
 }
+
+var box = document.getElementById('faltaquanto')
+
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut(2000);
+});
+
+window.addEventListener("load", function (event) {
+    setTimeout(() => {
+       box.style.display = 'block' 
+    }, 1500);
+})
+
 /*
 Qual é a sua meta?
 Quanto você tem?
