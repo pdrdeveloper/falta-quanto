@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  background-color: rgb(201, 201, 201);
+  background: linear-gradient(225deg, #919191, #ffffff);
 }
 
 .loader-wrapper {
@@ -13,7 +13,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #242f3f;
+  background-color: #283344;
   display: flex;
   justify-content: center;
   align-items: center;
