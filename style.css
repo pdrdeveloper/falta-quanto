@@ -90,8 +90,8 @@ body {
 }
 
 .box {
-  width: 400px;
-  padding: 40px 40px 20px 40px;
+  width: 450px;
+  padding: 40px 30px 20px 30px;
   background: rgba(0,0,0,.8);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.5);
@@ -109,6 +109,7 @@ body {
   margin: 20px 0;
   padding: 0;
   color: #fff;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -121,7 +122,7 @@ body {
   width: 200px;
   height: 30px;
   padding: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   font-size: 12px;
   background: #242f3f;
   color: #fff;
@@ -130,7 +131,7 @@ body {
   transition: .5s;
 }
 
-.box .selectBox select:focus {
+.box select:focus {
   outline: none;
 }
 
@@ -152,6 +153,18 @@ body {
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
+}
+
+#tempoOption {
+  width: 80px;
+  height: 32px;
+  position: absolute;
+  top: 6%;
+  left: 80%;
+  background: #242f3f;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
 }
 
 .box .inputBox label {
@@ -193,9 +206,13 @@ body {
   border-radius: 5px;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:500px) {
   .box {
     width: 90%;
+  }
+  #tempoOption {
+    width: 70px;
+    left: 82%;
   }
   .box .inputBox label {
     font-size: 13px;
@@ -206,9 +223,20 @@ body {
   }
 }
 
+@media only screen and (max-width:480px) {
+  #tempoOption {
+    left: 81%;
+  } 
+}
+
 @media only screen and (max-width:400px) {
   .box {
     width: 90%;
+  }
+  #tempoOption {
+    left: 77%;
+    font-size: 11px;
+    width: 62px;
   }
   .box .inputBox label {
     font-size: 11px;
