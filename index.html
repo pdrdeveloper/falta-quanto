@@ -18,14 +18,21 @@
                 <span class="loader"><span class="loader-inner"></span></span>
             </div>
             <div id="container">
+                    <div class="lang" id="lang">
+                        <p id="idiomaP">Idioma</p>
+                        <select id="idiomaUsuario">
+                            <option value="pt">Português (BR)</option>
+                            <option value="en">English (US)</option>
+                        </select>
+                    </div>
             <div class="box" id="faltaquanto">
-                    <h2>Falta Quanto?</h2>
+                    <h2 id="titleApp">Falta Quanto?</h2>
                     <div class="selectBox">
                         <select name="categoria" id="categoriaUsuario">
-                            <option value="escolha">Escolha uma categoria.</option>
-                            <option value="estudos">Estudos</option>
-                            <option value="viagem">Viagem</option>
-                            <option value="compras">Compras</option>
+                            <option value="escolhacategoria" id="escolha">Escolha uma categoria.</option>
+                            <option value="estudos" id="estudos">Estudos</option>
+                            <option value="viagem" id="viagem">Viagem</option>
+                            <option value="compras" id="compras">Compras</option>
                         </select>
                     </div>
                     <div class="inputBox" id="meta">
@@ -43,14 +50,14 @@
                         <div class="inputBox" id="tempo">
                             <input type="number" name="" required="" id="tempoMeta" autocomplete="off">
                             <select name="modoTempo" id="tempoOption">
-                                <option value="dia">Dia(s)</option>
-                                <option value="mes">Mês(es)</option>
-                                <option value="ano">Ano(s)</option>
+                                <option value="dia" id="optDia">Dia(s)</option>
+                                <option value="mes" id="optMes">Mês(es)</option>
+                                <option value="ano" id="optAno">Ano(s)</option>
                             </select>
                             <label id="txtTempo">Em quanto meses você precisa atingir?</label>
                         </div>
                         <div id="btn">
-                            <button onclick="validaInfo()">Clique aqui.</button><br>
+                            <button onclick="validaInfo()" id="btnRes">Clique aqui.</button><br>
                         </div>
                         <p id="resultado">Por favor, escolha uma categoria.</p>
                 </div>            
